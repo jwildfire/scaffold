@@ -8,6 +8,7 @@ Personal Claude Code plugin marketplace — commands for everyday use.
 |---|---|
 | `/cheatsheet` | Regenerate and open a config overview (commands, skills, agents, permissions, context files) in Chrome |
 | `/spawn <task>` | Spawn a background agent pre-loaded with context from the current session |
+| `/todo <task>` | Add a reminder to Apple Reminders with a summary, notes, repo name, and session ID |
 
 ## Install
 
