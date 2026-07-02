@@ -26,10 +26,17 @@ If destination is GitHub issue and the repo is unclear or the working directory 
 
 From the task description write:
 - **title**: a single concise line (≤80 chars) capturing the core action
-- **notes**: 2–4 sentences of context — what needs doing, why it matters, any relevant constraints — followed by:
+- **notes**: 2–4 sentences of context — what needs doing, why it matters, any relevant constraints
+
+Then append metadata based on destination:
+- **Apple Reminders** (private, needs the repo pointer):
   ```
   Repo: <repo>
   Session: <session-id>
+  ```
+- **GitHub issue** (repo is implicit; keep session ID out of the rendered page — HTML comment only):
+  ```
+  <!-- Session: <session-id> -->
   ```
 
 ## Step 4 — Create the todo
