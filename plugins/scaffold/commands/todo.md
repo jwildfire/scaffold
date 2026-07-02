@@ -21,9 +21,12 @@ Steps:
      Session: <session-id>
      ```
 
-3. Create the reminder with this osascript (substitute TITLE and NOTES):
+3. Create the reminder with this osascript (substitute TITLE and NOTES). This also creates the list if it doesn't exist yet:
    ```
-   osascript -e 'tell application "Reminders" to tell list "Reminders" to make new reminder with properties {name:"TITLE", body:"NOTES"}'
+   osascript -e 'tell application "Reminders"
+     if not (exists list "Agent Reminders") then make new list with properties {name:"Agent Reminders"}
+     tell list "Agent Reminders" to make new reminder with properties {name:"TITLE", body:"NOTES"}
+   end tell'
    ```
 
 4. Confirm to the user: show the title and the first line of notes.
