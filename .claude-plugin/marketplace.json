@@ -1,0 +1,14 @@
+{
+  "name": "jwildfire-scaffold",
+  "description": "Personal Claude Code plugin marketplace — commands for everyday use.",
+  "owner": {
+    "name": "jwildfire"
+  },
+  "plugins": [
+    {
+      "name": "scaffold",
+      "source": "./plugins/scaffold",
+      "description": "Personal Claude Code commands: cheatsheet (config overview in Chrome), spawn (background agent with session context), todo, and usage-report (HTML activity report)"
+    }
+  ]
+}
