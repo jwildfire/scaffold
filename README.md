@@ -9,6 +9,7 @@ Personal Claude Code plugin marketplace — commands for everyday use.
 | `/cheatsheet` | Regenerate and open a config overview (commands, skills, agents, permissions, context files) in Chrome |
 | `/spawn <task>` | Spawn a background agent pre-loaded with context from the current session |
 | `/todo <task>` | Add a reminder to Apple Reminders with a summary, notes, repo name, and session ID |
+| `/usage-report [timeframe] [project]` | Regenerate an HTML Claude Code usage report (working style, metrics, session diary) — defaults to the trailing 1 year across all projects |
 
 ## Install
 
@@ -32,3 +33,4 @@ That's it. `/cheatsheet` finds its script automatically from the plugin install 
 
 - `cheatsheet.py` introspects `~/.claude/` (settings, commands, skills, agents, permissions, context files) and writes `~/.claude/cheatsheet.html`. The script is bundled at `plugins/scaffold/scripts/cheatsheet.py`.
 - `spawn` works anywhere — no local dependencies.
+- `usage-report` mines `~/.claude/projects/*/*.jsonl` session transcripts. `usage_report_scan.py` does the mechanical counting (sessions, tool-call volume, PR/commit mentions, daily activity); the command delegates PR classification and diary-writing to sub-agents, then renders `usage-report-template.html` with the computed data. Nothing leaves your machine.
