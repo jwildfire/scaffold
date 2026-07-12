@@ -13,6 +13,8 @@ First, write a concise context briefing (under ~300 words) capturing what this n
 
 Skip anything the agent can rediscover by reading the code.
 
+Always include this instruction in the briefing: commit or file mid-flight deliverables (design catalogs, review findings, decisions) to disk or an issue as they are produced — transcripts die with the session; on-disk work survives.
+
 Then pick the spawn parameters deliberately — as the lead agent this is your call, so think strategically about model and effort per sub-agent rather than defaulting to your own:
 
 - **Model** (`--model`): judgment-heavy, novel, or framework-shaping work → the strongest available model; well-specified template-following implementation → a mid-tier model (e.g. opus); light mechanical chores → a small fast model (e.g. sonnet or haiku). State the choice and why in your reply.
