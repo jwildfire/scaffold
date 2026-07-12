@@ -1,6 +1,6 @@
 {
   "name": "scaffold",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal Claude Code commands: cheatsheet (config overview in Chrome), spawn (background agent with session context), todo, and usage-report (HTML activity report)",
   "author": {
     "name": "jwildfire"
