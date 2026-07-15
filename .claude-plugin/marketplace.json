@@ -8,7 +8,7 @@
     {
       "name": "scaffold",
       "source": "./plugins/scaffold",
-      "description": "Personal Claude Code commands: cheatsheet (config overview in Chrome), spawn (background agent with session context), todo, and usage-report (HTML activity report)"
+      "description": "Personal Claude Code commands: cheatsheet (config overview in Chrome), todo, and usage-report (HTML activity report)"
     }
   ]
 }
